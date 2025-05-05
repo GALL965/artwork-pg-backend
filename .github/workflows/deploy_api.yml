@@ -16,7 +16,7 @@ jobs:
       - name: Iniciar sesión en Docker Hub
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USER }}" --password-stdin
 
-      - name: Construir la imagen Docker
+      - name: Construir la imagen Docker con nombre correcto
         run: docker build -t gall96/artworks-pg-backend:latest .
 
       - name: Subir la imagen a Docker Hub
