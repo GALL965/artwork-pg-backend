@@ -7,7 +7,7 @@ RUN npm install
 
 COPY . .
 
-#ss 
+#s 
 RUN rm -f .env
 
 EXPOSE 8080
