@@ -2,7 +2,7 @@ require('dotenv').config();
 
 module.exports = {
   development: {
-    use_env_variable: 'DEV_DATABASE_URL', // 👈 esta es la clave correcta
+    use_env_variable: 'DEV_DATABASE_URL',
     dialect: 'postgres',
     dialectOptions: {
       ssl: {
